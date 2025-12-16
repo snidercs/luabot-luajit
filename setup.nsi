@@ -9,7 +9,7 @@ OutFile "luabot-win64-0.0.1-setup.exe"
 Unicode True
 
 ; Default installation folder
-InstallDir "$PROGRAMFILES\LuaBot"
+InstallDir "$PROGRAMFILES64\LuaBot"
 
 ; Request application privileges
 RequestExecutionLevel admin
@@ -18,7 +18,7 @@ RequestExecutionLevel admin
 !define MUI_ABORTWARNING
 
 ; Pages
-!insertmacro MUI_PAGE_LICENSE "luajit\COPYRIGHT"
+!insertmacro MUI_PAGE_LICENSE "LICENSE.txt"
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
 
