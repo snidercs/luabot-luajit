@@ -16,8 +16,8 @@ mkdir dist\windows\include
 mkdir dist\windows\include\luajit-2.1
 mkdir dist\windows\share
 mkdir dist\windows\share\lua
-mkdir dist\windows\share\lua\5.1
-mkdir dist\windows\share\lua\5.1\jit
+mkdir dist\windows\share\lua\luajit-2.1
+mkdir dist\windows\share\lua\luajit-2.1\jit
 
 @rem Copy build results
 copy luajit\src\luajit.exe dist\windows\bin\
@@ -29,7 +29,7 @@ copy luajit\src\luaconf.h dist\windows\include\luajit-2.1\
 copy luajit\src\luajit.h dist\windows\include\luajit-2.1\
 copy luajit\src\lua.hpp dist\windows\include\luajit-2.1\
 
-xcopy luajit\src\jit\*.lua dist\windows\share\lua\5.1\jit\ /I /Y
+xcopy luajit\src\jit\*.lua dist\windows\share\lua\luajit-2.1\jit\ /I /Y
 
 @echo.
 @echo === Build results copied to dist\windows ===
